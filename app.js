@@ -8,8 +8,9 @@ let max;
 let h2 = document.querySelector('h2');
 let color = ["red", "purple", "aqua", "pink"];
 let show = document.querySelector('#highScore');
+let button = document.querySelector('button');
 
-document.addEventListener("keypress", function () {
+button.addEventListener("click", function () {
     if (starter == false) {
         console.log("Game Started!");
         starter = true;
@@ -24,7 +25,7 @@ function checkSeq(idx) {
             setTimeout(levelUp, 800);
         }
     } else {
-        h2.innerHTML = `Game Over! Your Score is <b>${level}</b> <br> Press any key to Restart`;
+        h2.innerHTML = `Game Over! Your Score is <b>${level}</b> <br> Press Start to Restart the Game.`;
         document.querySelector('body').style.backgroundColor = "red";
         setTimeout(function () {
             document.querySelector('body').style.backgroundColor = "white";
