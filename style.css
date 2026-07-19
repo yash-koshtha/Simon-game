@@ -9,6 +9,17 @@ h1 {
     text-decoration: underline black;
 }
 
+body{
+    display:flex;
+    justify-content: center;
+}
+.outer_container{
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, .15);
+    border: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+}
 .btn {
     width: 150px;
     height: 150px;
@@ -60,5 +71,5 @@ button {
     border-radius: 30px;
     font-size: 30px;
     background: linear-gradient(135deg, rgb(235, 163, 31), rgb(137, 4, 137));
-
+    margin-bottom: 2rem;
 }
