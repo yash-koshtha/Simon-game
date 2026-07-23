@@ -9,24 +9,26 @@ h1 {
     text-decoration: underline black;
 }
 
-body{
-    display:flex;
+body {
+    display: flex;
     justify-content: center;
 }
-.outer_container{
+
+.outer_container {
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, .15);
     border: 1px solid rgba(255, 255, 255, .2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, .2);
     border-radius: 20px;
 }
+
 .btn {
     width: 150px;
     height: 150px;
     margin: 2.5rem;
     border: 8px solid black;
     border-radius: 30px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
@@ -72,4 +74,37 @@ button {
     font-size: 30px;
     background: linear-gradient(135deg, rgb(235, 163, 31), rgb(137, 4, 137));
     margin-bottom: 2rem;
+}
+
+/* // for mobile resolution  */
+@media (min-width:300px) and (max-width:700px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outer_container {
+        margin: 1rem;
+        width: 85%;
+    }
+
+    .btn_container1,
+    .btn_container2 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 50%;
+        height: 100px;
+        margin: 1rem 0 1rem 0;
+    }
+
+    button {
+        width: 100%;
+    }
 }
